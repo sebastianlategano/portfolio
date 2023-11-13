@@ -803,80 +803,30 @@
 
             
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="./forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://formspree.io/f/xzblqzey" method="POST" class="php-email-form1">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Nombre</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <input type="text" name="name" class="form-control">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Email/Teléfono</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <input type="email" class="form-control" name="email">
                 </div>
               </div>
               <div class="form-group">
                 <label for="name">Asunto</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <input type="text" class="form-control" name="subject">
               </div>
               <div class="form-group">
                 <label for="name">Mensaje</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="message" rows="10"></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Cargando</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Tu mensaje ha sido enviado. Muchas gracias!</div>
-              </div>
+
               <div class="text-center"><button type="submit" name="submit" value="Enviar mensaje">Enviar mensaje</button></div>
             </form>
           </div>
           
-          <div class="container">
-            <form id="contactForm" action="https://formspree.io/f/xzblqzey" method="post">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-    
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-          <!--
-          <div class="form-container">
-            <form name="contactFormEmail" method="post">
-              <div class="input-row">
-                <label>Name <em>*</em></label> 
-                <input type="text" name="userName" required id="userName"> 
-              </div>
-              <div class="input-row">
-                <label>Email <em>*</em></label> 
-                <input type="email" name="userEmail" required id="userEmail"> 
-              </div>
-              <div class="input-row">
-                <label>Phone <em>*</em></label> 
-                <input type="text" name="userPhone" required id="userPhone">
-              </div>
-              <div class="input-row">
-                <label>Message <em>*</em></label> 
-                <textarea name="userMessage" required id="userMessage"> -->
-              <!--
-                </div>
-              <div class="input-row">
-                <input type="submit" name="send" value="Submit">
-                <?php if (! empty($message)) {?>
-                <div class='success'>
-                  <strong><?php echo $message; ?>	</strong>
-                </div>
-                <?php } ?>
-              </div>
-            </form>
-          </div>
-        -->
-
         </div>
         
 
