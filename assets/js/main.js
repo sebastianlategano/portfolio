@@ -6,40 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-  event.preventDefault();
 
-  // Validar el formulario aquí si es necesario
-
-  // Obtener los datos del formulario
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
-
-  // Puedes agregar más validaciones aquí si es necesario
-
-  // Enviar datos a un script del lado del servidor (como PHP) para procesar el formulario
-  // Aquí se utiliza un ejemplo ficticio process_form.php
-  fetch('process_form.php', {
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-          name: name,
-          email: email,
-          message: message,
-      }),
-  })
-  .then(response => response.json())
-  .then(data => {
-      // Manejar la respuesta del servidor aquí
-      console.log('Respuesta del servidor:', data);
-  })
-  .catch(error => {
-      console.error('Error al enviar el formulario:', error);
-  });
-});
 
 
 
