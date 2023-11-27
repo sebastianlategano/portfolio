@@ -9,7 +9,9 @@ Mis modificaciones
 }
 
 .tec-icon img {
-  height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  align-items: center;
 }
 
 .portfolio-item p {
